@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.home.test2.MainActivity"
+    >
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Cancel"
+    android:layout_marginLeft="100dp"
+    android:layout_marginTop="100dp"
+    android:onClick="do_cancel"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:alpha="22"
+        android:backgroundTintMode="src_over"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hydrangeas" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="22"
+                android:backgroundTintMode="src_over"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hydrangeas" />
+
+        </LinearLayout>
+            </ScrollView>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="horizontal"
+     android:weightSum="3">
+     <Button
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_weight="1"
+         android:alpha=".2"/>
+     <Button
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_weight="1"
+         android:alpha=".2"/>
+     <Button
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_weight="1"
+         android:alpha=".2"/>
+ </LinearLayout>
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+
+        android:text="Flower"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#ce3030"
+        android:background="#e7e71b"
+        android:foregroundGravity="center"
+        android:onClick="do_my_work"
+
+
+        android:layout_marginTop="25dp"
+
+
+        android:layout_marginLeft="250dp"
+        android:alpha=".5"
+
+         />
+
+</RelativeLayout>
